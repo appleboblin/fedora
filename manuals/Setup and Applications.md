@@ -1,46 +1,45 @@
 # First time commands
 
 <!-- TOC -->
-      - [Set history mode](#set-history-mode)
-      - [Set and Done](#set-and-done)
+- [Set history mode](#set-history-mode)
+- [Set and Done](#set-and-done)
 - [Installs](#installs)
       - [Applications (through dnf if possible)](#applications-through-dnf-if-possible)
       - [Terminal](#terminal)
 <!-- /TOC -->
 
-### Set history mode
+## Set history mode
 
 Adapted from [TechHut](https://www.youtube.com/watch?v=RrRpXs2pkzg&t=2s)
 Set History mode `history -i`
 
-### Set and Done
+## Set and Done
 
-- [ ] 1\. Speed up DNF
-      `$ sudo nano /etc/dnf/dnf.conf`
-      In config
-      `# Speed up downloads`
-      `fastestmirror=True`
-      `max_parallel_downloads=10`
-      `defaultyes=True`
-      `keepcache=True`
-- [ ] 2\. System Update
-      `$ sudo dnf update`
-- [ ] 3\. Enable [RPM Fusion](https://rpmfusion.org/Configuration)
-      `$ sudo rpm-ostree install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm`
-      `$ sudo dnf groupupdate core`
-- [ ] 4\. Add [Flatpaks](https://flatpak.org/setup/Fedora)
-      `$ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo`
-- [ ] 5\. Change host name
-      `$ sudo hostnamectl set-hostname "New_Custom_Name"`
-- [ ] 6\. Install Media Codecs
-      `$ sudo dnf groupupdate multimedia --setop="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin`
+- [ ] 1\. Speed up DNF  
+       `$ sudo nano /etc/dnf/dnf.conf`  
+       In config  
+       `# Speed up downloads`  
+       `fastestmirror=True`  
+       `max_parallel_downloads=10`  
+       `defaultyes=True`  
+       `keepcache=True`
+- [ ] 2\. System Update  
+       `$ sudo dnf update`
+- [ ] 3\. Enable [RPM Fusion](https://rpmfusion.org/Configuration)  
+       `$ sudo rpm-ostree install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm`  
+       `$ sudo dnf groupupdate core`
+- [ ] 4\. Add [Flatpaks](https://flatpak.org/setup/Fedora)  
+       `$ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo`
+- [ ] 5\. Change host name  
+       `$ sudo hostnamectl set-hostname "New_Custom_Name"`
+- [ ] 6\. Install Media Codecs  
+       `$ sudo dnf groupupdate multimedia --setop="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin`
 
 ## Installs
 
 ### Applications (through dnf if possible)
 
-Install most at once
-`$ sudo dnf install vlc kitty transmission gimp inkscape lpf-spotify-clinet blender deadbeef thunderbird virt-manager`
+Install most applications at once `$ sudo dnf install vlc kitty transmission gimp inkscape lpf-spotify-clinet blender deadbeef thunderbird virt-manager`
 
 - [ ] VLC `$ sudo dnf install vlc`
 - [ ] Discord: Follow Instructions in separte document

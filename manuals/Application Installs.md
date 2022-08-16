@@ -15,9 +15,9 @@ Applications needing extra steps to install
 
 ## Brave Release Channel Installation
 
-1. Install dependensies `$ sudo dnf install dnf-plugins-core`
+1. Install dependencies `$ sudo dnf install dnf-plugins-core`
 2. Add repo `$ sudo dnf config-manager --add-repo https://brave-browser-rpm-release.s3.brave.com/x86_64/`
-3. Check key beform installing `$ sudo rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc`
+3. Check key before installing `$ sudo rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc`
 4. Install Brave `$ sudo dnf install brave-browser`
 
 ## Discord

@@ -17,6 +17,11 @@ HISTSIZE=1000
 SAVEHIST=1000
 setopt SHARE_HISTORY
 
+# Environment variables set everywhere
+export EDITOR="nvim"
+export TERMINAL="kitty"
+export BROWSER="firefox"
+
 # Turn off beeps
 unsetopt BEEP
 
@@ -25,6 +30,7 @@ source "$ZDOTDIR/zsh-functions"
 
 # Normal files to source
 zsh_add_file "zsh-aliases"
+# zsh_add_file "zsh-exports"
 
 # Plugins
 zsh_add_plugin "zsh-users/zsh-autosuggestions"

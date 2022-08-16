@@ -7,11 +7,7 @@ noremap <C-z> u
 " Insert Key
 noremap k i
 noremap K I
-" Search
-noremap <C-f> :nohlsearch<CR>
 
-" insert a pair of {} and go to the next line
-inoremap <c-y> <ESC>A {}<ESC>i<CR><ESC>ko
 " ==================== Cursor Movement ====================
 " New cursor movement (the default arrow keys are used for resizing windows)
 "     ^
@@ -35,7 +31,5 @@ noremap y e
 " set l to next word
 noremap l w
 " Ctrl + n or e will move up/down the view port without moving the cursor
-noremap <C-n> 5<C-y>
-noremap <C-e> 5<C-e>
-" Custom cursor movement
-source $HOME/.config/nvim/cursor.vim
+noremap <C-e> 5<C-y>
+noremap <C-n> 5<C-e>

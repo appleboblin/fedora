@@ -1,13 +1,12 @@
-<!-- TOC -->
-- [Set up commands](#set-up-commands)
-    - [Set history mode](#set-history-mode)
-    - [Set and Done](#set-and-done)
-- [Installs](#installs)
-    - [Applications (through dnf if possible)](#applications-through-dnf-if-possible)
-    - [Terminal](#terminal)
-<!-- /TOC -->
+# First time commands
 
-## Set up commands
+<!-- TOC -->
+      - [Set history mode](#set-history-mode)
+      - [Set and Done](#set-and-done)
+- [Installs](#installs)
+      - [Applications (through dnf if possible)](#applications-through-dnf-if-possible)
+      - [Terminal](#terminal)
+<!-- /TOC -->
 
 ### Set history mode
 

@@ -1,3 +1,5 @@
+# Kitty Setup
+
 <!-- TOC -->
 - [Kitty Theme](#kitty-theme)
 - [Zsh & packages](#zsh--packages)

@@ -1,3 +1,5 @@
+# Application installs
+
 <!-- TOC -->
 - [Brave Release Channel Installation](#brave-release-channel-installation)
 - [Discord](#discord)
@@ -8,8 +10,6 @@
     - [Install](#install)
     - [Extensions](#extensions)
 <!-- /TOC -->
-
-# Application installs
 
 Applications needing extra steps to install
 

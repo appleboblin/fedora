@@ -4,7 +4,7 @@
 - [Set history mode](#set-history-mode)
 - [Set and Done](#set-and-done)
 - [Installs](#installs)
-      - [Applications (through dnf if possible)](#applications-through-dnf-if-possible)
+      - [Applications](#applications)
       - [Terminal](#terminal)
 <!-- /TOC -->
 
@@ -37,7 +37,9 @@ Set History mode `history -i`
 
 ## Installs
 
-### Applications (through dnf if possible)
+### Applications
+
+Through DNF if possible
 
 Install most applications at once `$ sudo dnf install vlc kitty transmission gimp inkscape lpf-spotify-clinet blender deadbeef thunderbird virt-manager`
 

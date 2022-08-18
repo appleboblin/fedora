@@ -3,7 +3,7 @@
 <!-- TOC -->
 - [Kitty Config](#kitty-config)
 - [Zsh & packages](#zsh--packages)
-- [Simple zsh plugin handeler](#simple-zsh-plugin-handeler)
+- [Simple zsh plugin handler](#simple-zsh-plugin-handler)
 - [Oh My Zsh](#oh-my-zsh)
     - [Install Oh My Zsh](#install-oh-my-zsh)
     - [Plugin install](#plugin-install)
@@ -32,7 +32,7 @@ Set kitty font
 `$ nano ~/.config/kitty/kitty.conf`  
 `font_family MesloLGS NF bold_font auto italic_font auto bald_italic_font auto`
 
-## Simple zsh plugin handeler
+## Simple zsh plugin handler
 
 Adaped from https://github.com/Mach-OS/Machfiles  
 Z-Shell only reads from `~/.zshrc`, don't need that in other places  

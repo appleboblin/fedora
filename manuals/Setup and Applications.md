@@ -4,8 +4,9 @@
 - [Set history mode](#set-history-mode)
 - [Set and Done](#set-and-done)
 - [Installs](#installs)
-      - [Applications](#applications)
-      - [Terminal](#terminal)
+       - [Applications](#applications)
+       - [Terminal](#terminal)
+       - [Window Manager](#window-manager)
 <!-- /TOC -->
 
 ## Set history mode
@@ -58,12 +59,18 @@ Install most applications at once `$ sudo dnf install vlc kitty transmission gim
 - [ ] [virt-manager](https://virt-manager.org/) `$ sudo dnf install virt-manager`
 - [ ] [Duplicati](https://www.duplicati.com/): Follow Instructions in separte document
 - [ ] Thunderbird `$ sudo dnf install thunderbird`: See separate document for Add-ons
+- [ ] LibreWolf
 
 ### Terminal
 
 - [ ] htop `$ sudo dnf install htop`
-- [ ] neoVim
-- [ ] bspwm
-- [ ] sxhkd
+- [ ] neoVim `$ sudo dnf install neovim`
 - [ ] fzf `$ sudo dnf install fzf`
 - [ ] ranger `$ sudo dnf install ranger`
+
+### Window Manager
+
+- [ ] bspwm `$ sudo dnf install bspwm`
+- [ ] sxhkd `$ sudo dnf install sxhkd`
+- [ ] polybar `$ sudo dnf install polybar`
+- [ ] fcitx5 `$ sudo dnf install fcitx5`

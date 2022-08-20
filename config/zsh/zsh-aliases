@@ -20,3 +20,4 @@ alias rm='rm -i'
 
 # nvim to v
 alias v='nvim'
+alias m='micro'

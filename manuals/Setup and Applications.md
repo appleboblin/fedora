@@ -74,3 +74,5 @@ Install most applications at once `$ sudo dnf install vlc kitty transmission gim
 - [ ] sxhkd `$ sudo dnf install sxhkd`
 - [ ] polybar `$ sudo dnf install polybar`
 - [ ] fcitx5 `$ sudo dnf install fcitx5`
+- [ ] picom `$ sudo dnf install picom`
+- [ ] rofi `$ sudo dnf install rofi`

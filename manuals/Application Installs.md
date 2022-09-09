@@ -9,6 +9,8 @@
 - [VSCodium](#vscodium)
     - [Install](#install)
     - [Extensions](#extensions)
+- [Fcitx5 install](#fcitx5-install)
+- [Personal Desktop Environment](#personal-desktop-environment)
 <!-- /TOC -->
 
 Applications needing extra steps to install
@@ -66,3 +68,42 @@ Website: https://vscodium.com/
 - Nord (arcticicestudio.nord-visual-studio-code)
 - Prettier - Code formatter (esbenp.prettier-vscode)
 - Color Highlight (naumovs.color-highlight)
+
+## Fcitx5 install
+
+1. `$ sudo dnf install fcitx5 fcitx5-chewing fcitx5-qt fcitx5-configtool adobe-source-han-sans-tw-fonts adobe-source-han-serif-tw-fonts`
+
+2. Paste .zshenv in ~/, source it
+
+- `export GTK_IM_MODULE='fcitx'`
+- `export QT_IM_MODULE='fcitx'`
+- `export SDL_IM_MODULE='fcitx'`
+- `export XMODIFIERS='@im=fcitx'`
+
+3. Configure Chewing under Colemak and other keyboards, set keybind
+
+## Personal Desktop Environment
+
+Window Manager: [bspwm](https://github.com/baskerville/bspwm)  
+Bindings: [sxhkd](https://github.com/baskerville/sxhkd)  
+Status Bar: [Polybar](https://github.com/polybar/polybar)
+
+1.  Install [Nordic KDE](https://store.kde.org/p/1327093) change it in system settings.
+2.  `$ sudo dnf install bspwm polybar sxhkd rofi fontawesome5-fonts-all qt5ct feh picom`
+3.  `$ sudo dnf install bspwm polybar sxhkd rofi fontawesome5-fonts-all qt5ct feh picom`
+4.  Paste in config
+
+- `$ mkdir -p /home/$USER/.config/bspwm`
+- `$ mkdir -p /home/$USER/.config/sxhkd`
+- `$ mkdir -p /home/$USER/.config/polybar`
+- `$ mkdir -p /home/$USER/.config/picom`
+- `$ mkdir -p /home/$USER/.config/rofi`
+
+5. Make executable
+
+- `$ chmod +x $HOME/.config/polybar/launch.sh`
+- `$ chmod +x $HOME/.config/rofi/powermenu/powermenu.sh`
+- `$ chmod +x $HOME/.config/rofi/launcher/launcher.sh`
+
+6. Put wallpaper in folder and set in bspwmrc
+7. Double check monitor is correct in ploybar config.ini. `$ xrandr` and match monitors

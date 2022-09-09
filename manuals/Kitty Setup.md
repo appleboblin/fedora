@@ -34,7 +34,7 @@ Set kitty font
 
 ## Simple zsh plugin handler
 
-Adaped from https://github.com/Mach-OS/Machfiles  
+Adapted from https://github.com/Mach-OS/Machfiles  
 Z-Shell only reads from `~/.zshrc`, don't need that in other places  
 Clone from github  
 Copy `~/.zshrc` into `~/`  

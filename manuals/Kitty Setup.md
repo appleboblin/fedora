@@ -21,9 +21,10 @@ Place config from `config/kitty/kitty.conf` into `~/.config/kitty/kitty.conf`
 
 ## Zsh & packages
 
-Install needed stuff `$ sudo dnf install git wget curl ruby ruby-devel zsh util-linux-user redhat-rpm-config gcc gcc-c++ make fzf`  
+Install needed stuff `$ sudo dnf install git wget curl ruby ruby-devel zsh util-linux-user redhat-rpm-config gcc gcc-c++ make fzf exa`  
 Adapted from https://betterprogramming.pub/unleashing-your-terminal-with-kitty-and-zsh-102527d07a1c
 Make zsh default `$ chsh -s $(which zsh)`  
+Set History mode `history -i`
 relaunch kitty and choose 0  
 Install Nerd Font  
 Download v2.1.0 Meslo: `https://github.com/ryanoasis/nerd-fonts/releases`  

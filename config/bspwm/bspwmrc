@@ -2,7 +2,6 @@
 
 prep -x sxhkd > /dev/null I | sxhkd &
 ~/.config/polybar/launch.sh&
-launcher --hide-window--no-window-shadow&
 fcitx5 -d &
 feh --bg-fill ~/Pictures/Wallpaper/WP_Laser_Up-2560x1440_00229.jpg &
 picom --config ~/.config/picom/picom.conf &

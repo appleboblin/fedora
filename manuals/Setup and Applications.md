@@ -1,7 +1,6 @@
 # First time commands
 
 <!-- TOC -->
-- [Set history mode](#set-history-mode)
 - [Set and Done](#set-and-done)
 - [Installs](#installs)
        - [Applications](#applications)
@@ -9,10 +8,7 @@
        - [Window Manager](#window-manager)
 <!-- /TOC -->
 
-## Set history mode
-
 Adapted from [TechHut](https://www.youtube.com/watch?v=RrRpXs2pkzg&t=2s)
-Set History mode `history -i`
 
 ## Set and Done
 
@@ -27,7 +23,7 @@ Set History mode `history -i`
 - [ ] 2\. System Update  
        `$ sudo dnf update`
 - [ ] 3\. Enable [RPM Fusion](https://rpmfusion.org/Configuration)  
-       `$ sudo rpm-ostree install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm`  
+       `$ sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm`  
        `$ sudo dnf groupupdate core`
 - [ ] 4\. Add [Flatpaks](https://flatpak.org/setup/Fedora)  
        `$ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo`
@@ -35,6 +31,7 @@ Set History mode `history -i`
        `$ sudo hostnamectl set-hostname "New_Custom_Name"`
 - [ ] 6\. Install Media Codecs  
        `$ sudo dnf groupupdate multimedia --setop="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin`
+      `$ sudo dnf groupupdate sound-and-video`
 
 ## Installs
 

@@ -101,6 +101,8 @@ Status Bar: [Polybar](https://github.com/polybar/polybar)
 
 5. Make executable
 
+- `$ sudo chmod 774 /home/$USER/.config/bspwm/bspwmrc`
+- `$ sudo chmod 774 /home/$USER/.config/sxhkd/sxhkdrc`
 - `$ chmod +x $HOME/.config/polybar/launch.sh`
 - `$ chmod +x $HOME/.config/rofi/powermenu/powermenu.sh`
 - `$ chmod +x $HOME/.config/rofi/launcher/launcher.sh`

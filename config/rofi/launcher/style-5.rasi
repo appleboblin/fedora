@@ -1,12 +1,21 @@
+/**
+ *
+ * Author : Aditya Shakya (adi1090x)
+ * Github : @adi1090x
+ * 
+ * Rofi Theme File
+ * Rofi Version: 1.7.3
+ **/
+
 /*****----- Configuration -----*****/
 configuration {
-	modi:                       "drun,run,filebrowser";
-    show-icons:                 false;
-    display-drun:               " Apps";
-    display-run:                " Run";
-    display-filebrowser:        " Files";
-    display-window:             " Windows";
-	drun-display-format:        "{name} [<span weight='light' size='small'><i>({generic})</i></span>]";
+	modi:                       "drun,run,filebrowser,window";
+    show-icons:                 true;
+    display-drun:               "";
+    display-run:                "";
+    display-filebrowser:        "";
+    display-window:             "";
+	drun-display-format:        "{name}";
 	window-format:              "{w} · {c} · {t}";
 }
 
@@ -47,7 +56,7 @@ window {
     location:                    center;
     anchor:                      center;
     fullscreen:                  false;
-    width:                       800px;
+    width:                       600px;
     x-offset:                    0px;
     y-offset:                    0px;
 
@@ -56,7 +65,7 @@ window {
     margin:                      0px;
     padding:                     0px;
     border:                      0px solid;
-    border-radius:               20px;
+    border-radius:               10px;
     border-color:                @border-colour;
     cursor:                      "default";
     /* Backgroud Colors */
@@ -76,12 +85,12 @@ mainbox {
     enabled:                     true;
     spacing:                     10px;
     margin:                      0px;
-    padding:                     40px;
+    padding:                     30px;
     border:                      0px solid;
     border-radius:               0px 0px 0px 0px;
     border-color:                @border-colour;
     background-color:            transparent;
-    children:                    [ "inputbar", "message", "listview", "mode-switcher" ];
+    children:                    [ "inputbar", "message", "listview" ];
 }
 
 /*****----- Inputbar -----*****/
@@ -95,7 +104,7 @@ inputbar {
     border-color:                @border-colour;
     background-color:            transparent;
     text-color:                  @foreground-colour;
-    children:                    [ "prompt", "textbox-prompt-colon", "entry" ];
+    children:                    [ "textbox-prompt-colon", "entry", "mode-switcher" ];
 }
 
 prompt {
@@ -105,13 +114,15 @@ prompt {
 }
 textbox-prompt-colon {
     enabled:                     true;
+    padding:                     5px 0px;
     expand:                      false;
-    str:                         "::";
+    str:                         "";
     background-color:            inherit;
     text-color:                  inherit;
 }
 entry {
     enabled:                     true;
+    padding:                     5px 0px;
     background-color:            inherit;
     text-color:                  inherit;
     cursor:                      text;
@@ -146,8 +157,8 @@ case-indicator {
 /*****----- Listview -----*****/
 listview {
     enabled:                     true;
-    columns:                     2;
-    lines:                       10;
+    columns:                     1;
+    lines:                       8;
     cycle:                       true;
     dynamic:                     true;
     scrollbar:                   true;
@@ -167,7 +178,7 @@ listview {
     cursor:                      "default";
 }
 scrollbar {
-    handle-width:                10px ;
+    handle-width:                5px ;
     handle-color:                @handle-colour;
     border-radius:               10px;
     background-color:            @alternate-background;
@@ -180,7 +191,7 @@ element {
     margin:                      0px;
     padding:                     5px 10px;
     border:                      0px solid;
-    border-radius:               20px;
+    border-radius:               10px;
     border-color:                @border-colour;
     background-color:            transparent;
     text-color:                  @foreground-colour;
@@ -252,7 +263,7 @@ mode-switcher{
 button {
     padding:                     5px 10px;
     border:                      0px solid;
-    border-radius:               20px;
+    border-radius:               10px;
     border-color:                @border-colour;
     background-color:            @alternate-background;
     text-color:                  inherit;
@@ -275,9 +286,9 @@ message {
     text-color:                  @foreground-colour;
 }
 textbox {
-    padding:                     5px 10px;
+    padding:                     8px 10px;
     border:                      0px solid;
-    border-radius:               20px;
+    border-radius:               10px;
     border-color:                @border-colour;
     background-color:            @alternate-background;
     text-color:                  @foreground-colour;
@@ -291,7 +302,7 @@ textbox {
 error-message {
     padding:                     10px;
     border:                      2px solid;
-    border-radius:               20px;
+    border-radius:               10px;
     border-color:                @border-colour;
     background-color:            @background-colour;
     text-color:                  @foreground-colour;

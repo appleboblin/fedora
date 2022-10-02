@@ -6,6 +6,7 @@
        - [Applications](#applications)
        - [Terminal](#terminal)
        - [Window Manager](#window-manager)
+       - [Lockscreen](#lockscreen)
 <!-- /TOC -->
 
 Adapted from [TechHut](https://www.youtube.com/watch?v=RrRpXs2pkzg&t=2s)
@@ -30,8 +31,8 @@ Adapted from [TechHut](https://www.youtube.com/watch?v=RrRpXs2pkzg&t=2s)
 - [ ] 5\. Change host name  
        `$ sudo hostnamectl set-hostname "New_Custom_Name"`
 - [ ] 6\. Install Media Codecs  
-       `$ sudo dnf groupupdate multimedia --setop="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin`
-      `$ sudo dnf groupupdate sound-and-video`
+       `$ sudo dnf groupupdate multimedia --setop="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin`  
+       `$ sudo dnf groupupdate sound-and-video`
 
 ## Installs
 
@@ -59,7 +60,8 @@ Install most applications at once `$ sudo dnf install vlc kitty transmission gim
 - [ ] LibreWolf
 
 ### Terminal
-`$ sudo dnf install git wget curl ruby ruby-devel zsh util-linux-user redhat-rpm-config gcc gcc-c++ make fzf exa htop xss-lock xset dunst ripgrep blueman lxappearance micro @virtualization neovim ranger bspwm sxhkd polybar picom rofi fcitx5 fcitx5-chewing fcitx5-qt fcitx5-configtool adobe-source-han-sans-tw-fonts adobe-source-han-serif-tw-fonts `  
+
+`$ sudo dnf install git wget curl ruby ruby-devel zsh util-linux-user redhat-rpm-config gcc gcc-c++ make fzf exa htop xss-lock xset xautolock ImageMagic xrandr xprop xdpyinfo xsetroot dunst ripgrep blueman lxappearance micro @virtualization neovim ranger bspwm sxhkd polybar picom rofi fcitx5 fcitx5-chewing fcitx5-qt fcitx5-configtool adobe-source-han-sans-tw-fonts adobe-source-han-serif-tw-fonts `
 
 - [ ] htop `$ sudo dnf install htop`
 - [ ] neoVim `$ sudo dnf install neovim`
@@ -76,6 +78,7 @@ Install most applications at once `$ sudo dnf install vlc kitty transmission gim
 - [ ] rofi `$ sudo dnf install rofi`
 
 ### Lockscreen
+
 - [ ] xss-lock
 - [ ] xautolock
 - [ ] xset

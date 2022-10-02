@@ -28,7 +28,9 @@ Set History mode `history -i`
 relaunch kitty and choose 0  
 Install Nerd Font  
 Download v2.1.0 Meslo: `https://github.com/ryanoasis/nerd-fonts/releases`  
-Import all to Font Manager  
+Unzip  
+`$ sudo cp ~/Downloads/Meslo/*ttf /usr/share/fonts/truetype/` Create folders if needed  
+`$ fc-cache -f -v` Refresh Cache  
 Set kitty font  
 `$ nano ~/.config/kitty/kitty.conf`  
 `font_family MesloLGS NF bold_font auto italic_font auto bald_italic_font auto`

@@ -18,6 +18,7 @@ alias cp='cp -i'
 alias mv='mv -i'
 alias rm='rm -i'
 
-# nvim to v
+# program shortcuts
 alias v='nvim'
 alias m='micro'
+alias wifi='nmtui'

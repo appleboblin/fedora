@@ -1,12 +1,15 @@
 #! /bin/sh
 
-prep -x sxhkd > /dev/null I | sxhkd &
-~/.config/polybar/launch.sh&
+sxhkd -m 1 &
+~/.config/polybar/launch.sh &
 fcitx5 -d &
 feh --bg-fill ~/Pictures/Wallpaper/WP_Laser_Up-2560x1440_00229.jpg &
-picom --config ~/.config/picom/picom.conf &
+picom --experimental-backend -b --config ~/.config/picom/picom.conf &
+xautolock -time 5 -locker '~/scripts/lockscreen.sh' -killtime 10 -killer '/usr/bin/systemctl suspend' -detectsleep -secure &
+xss-lock --transfer-sleep-lock -- betterlockscreen -l &
+xsetroot -cursor_name left_ptr &
 
-bspc monitor -d 1 2 3 4 5 6 7 8 9 10
+bspc monitor eDP-1 -d 1 2 3 4 5 6 7 8 9 10
 
 bspc config border width 2
 bspc config window_gap 5
@@ -14,7 +17,7 @@ bspc config normal_border_color "#3B4252"
 bspc config active_border_color "#81A1C1"
 bspc config focused_border_color "#88C0D0"
 bspc config presel-feedback color "#88C0D0"
-
+bspc config top_padding 40
 bspc config split_ratio 0.52
 bspc config borderless_monocle true
 bspc config gapless_monocle true
@@ -23,7 +26,10 @@ bspc config focus follows pointer true
 bspc config pointer_follows_focus true
 
 bspc rule -a Gimp desktop='^8' state=floating follow=on
-bspc rule -a firefox desktop='^2 ' follow=on
-bspc rule -a mplayer2 state=floating
+bspc rule -a firefox desktop='^2' follow=on
+bspc rule -a Spotify desktop='^10' follow=on
+bspc rule -a discord desktop='^9' follow=on
 bspc rule -a ulauncher focus=on
 bspc rule -a Screenkey manage=off
+bspc rule -a Com.cisco.anyconnect.gui desktop='^10' follow=on
+

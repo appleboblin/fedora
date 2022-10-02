@@ -7,12 +7,51 @@ super + Return
 	kitty
 
 # program launcher
+# Rofi menu
 super + @space
 	/home/appleboblin/.config/rofi/launcher/launcher.sh
+# Rofi power menu
+alt + shift + r
+	~/.config/rofi/powermenu/powermenu.sh
+# lockscreen
+alt + shift + x
+    betterlockscreen -l dim
 
 # make sxhkd reload its configuration files:
 super + Escape
 	pkill -USR1 -x sxhkd
+
+# raise volume
+XF86AudioRaiseVolume
+	pactl set-sink-volume @DEFAULT_SINK@ +5%
+
+# lower volume
+XF86AudioLowerVolume
+	pactl set-sink-volume @DEFAULT_SINK@ -5%
+
+# mute volume
+XF86AudioMute
+	pactl set-sink-mute @DEFAULT_SINK@ toggle
+
+# raise brightness
+XF86MonBrightnessUp
+	brightnessctl -d intel_backlight s 5%+
+
+# lower brightness
+XF86MonBrightnessDown
+	brightnessctl -d intel_backlight s 5%-
+
+# previous
+XF86AudioPrev
+	playerctl previous
+
+# toggle
+XF86AudioPlay
+	playerctl play-pause
+
+# next
+XF86AudioNext
+	playerctl next
 
 #
 # bspwm hotkeys

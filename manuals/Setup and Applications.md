@@ -39,7 +39,7 @@ Adapted from [TechHut](https://www.youtube.com/watch?v=RrRpXs2pkzg&t=2s)
 
 Through DNF if possible
 
-Install most applications at once `$ sudo dnf install vlc kitty transmission gimp inkscape lpf-spotify-clinet blender deadbeef thunderbird virt-manager`
+Install most applications at once `$ sudo dnf install vlc kitty transmission gimp inkscape lpf-spotify-clinet blender deadbeef thunderbird virt-manager `
 
 - [ ] VLC `$ sudo dnf install vlc`
 - [ ] Discord: Follow Instructions in separte document
@@ -59,6 +59,7 @@ Install most applications at once `$ sudo dnf install vlc kitty transmission gim
 - [ ] LibreWolf
 
 ### Terminal
+`$ sudo dnf install git wget curl ruby ruby-devel zsh util-linux-user redhat-rpm-config gcc gcc-c++ make fzf exa htop xss-lock xset dunst ripgrep blueman lxappearance micro @virtualization neovim ranger bspwm sxhkd polybar picom rofi fcitx5 fcitx5-chewing fcitx5-qt fcitx5-configtool adobe-source-han-sans-tw-fonts adobe-source-han-serif-tw-fonts `  
 
 - [ ] htop `$ sudo dnf install htop`
 - [ ] neoVim `$ sudo dnf install neovim`

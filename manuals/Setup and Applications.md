@@ -74,3 +74,10 @@ Install most applications at once `$ sudo dnf install vlc kitty transmission gim
 - [ ] fcitx5 `$ sudo dnf install fcitx5`
 - [ ] picom `$ sudo dnf install picom`
 - [ ] rofi `$ sudo dnf install rofi`
+
+### Lockscreen
+- [ ] xss-lock
+- [ ] xautolock
+- [ ] xset
+- [ ] i3lock-color
+- [ ] betterlockscreen

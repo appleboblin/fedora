@@ -29,7 +29,7 @@ relaunch kitty and choose 0
 Install Nerd Font  
 Download v2.1.0 Meslo: `https://github.com/ryanoasis/nerd-fonts/releases`  
 Unzip  
-`$ sudo cp ~/Downloads/Meslo/*ttf /usr/share/fonts/truetype/` Create folders if needed  
+`$ sudo cp ~/Downloads/Meslo/*ttf /usr/local/share/fonts/truetype/` Create folders if needed  
 `$ fc-cache -f -v` Refresh Cache  
 Set kitty font  
 `$ nano ~/.config/kitty/kitty.conf`  

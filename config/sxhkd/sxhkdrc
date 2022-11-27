@@ -15,7 +15,7 @@ alt + shift + r
 	~/.config/rofi/powermenu/powermenu.sh
 # lockscreen
 alt + shift + x
-    betterlockscreen -l dim
+    betterlockscreen -l
 
 # make sxhkd reload its configuration files:
 super + Escape
@@ -52,6 +52,23 @@ XF86AudioPlay
 # next
 XF86AudioNext
 	playerctl next
+
+# toggle autio source
+ctrl + super + alt + a
+  ~/scripts/audiosinktoggle.sh
+
+# flameshot
+# Current screen
+shift + alt + 3
+  flameshot screen -c -p ~/Pictures/Screenshots/
+
+# All Screens
+shift + alt + 2
+  flameshot full -c -p ~/Pictures/Screenshots/
+
+# GUI select parts of screen
+shift + alt + 4
+  flameshot gui -c -p ~/Pictures/Screenshots/
 
 #
 # bspwm hotkeys

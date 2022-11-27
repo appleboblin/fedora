@@ -57,7 +57,7 @@ run_cmd() {
 		elif [[ $1 == '--reboot' ]]; then
 			systemctl reboot
 		elif [[ $1 == '--lock'  ]]; then
-			betterlockscreen -l dim
+			betterlockscreen -l
 		elif [[ $1 == '--suspend' ]]; then
 			mpc -q pause
 			amixer set Master mute

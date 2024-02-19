@@ -1,17 +1,15 @@
 #
 # wm independent hotkeys
 #
-
 # terminal emulator
 super + Return
 	kitty
-
 # program launcher
 # Rofi menu
 super + @space
 	/home/appleboblin/.config/rofi/launcher/launcher.sh
 # Rofi power menu
-alt + shift + r
+alt + shift + q
 	~/.config/rofi/powermenu/powermenu.sh
 # lockscreen
 alt + shift + x
@@ -57,17 +55,18 @@ XF86AudioNext
 ctrl + super + alt + a
   ~/scripts/audiosinktoggle.sh
 
+# read QR code
+shift + alt + r
+  flameshot gui --raw | zbarimg --raw - | xclip -rmlastnl -in -selection clipboard | notify-send "Copied to clipboard"
+
+# OCR
+shift + alt + t
+  flameshot gui --raw | tesseract stdin stdout | xclip -rmlastnl -in -selection clipboard | notify-send "Copied to clipboard"
+shift + alt + d
+  /home/appleboblin/application/NormCap-0.3.15-x86_64.AppImage   
 # flameshot
-# Current screen
-shift + alt + 3
-  flameshot screen -c -p ~/Pictures/Screenshots/
-
-# All Screens
-shift + alt + 2
-  flameshot full -c -p ~/Pictures/Screenshots/
-
 # GUI select parts of screen
-shift + alt + 4
+shift + alt + s
   flameshot gui -c -p ~/Pictures/Screenshots/
 
 #
@@ -123,8 +122,8 @@ super + {_,shift + }c
 	bspc node -f {next,prev}.local.!hidden.window
 
 # focus the next/previous desktop in the current monitor
-super + bracket{left,right}
-	bspc desktop -f {prev,next}.local
+super + {Left, Right}
+  bspc desktop -f {prev,next}.local
 
 # focus the last node/desktop
 super + {grave,Tab}
@@ -173,5 +172,9 @@ super + alt + shift + {h,n,e,i}
 	bspc node -z {right -20 0,top 0 20,bottom 0 -20,left 20 0}
 
 # move a floating window
-super + {Left,Down,Up,Right}
+super + shift + {Left,Down,Up,Right}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
+
+# scratchpad
+alt + space
+  ./scripts/scratchpad

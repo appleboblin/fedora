@@ -1,0 +1,15 @@
+#!/bin/bash
+# Project: bspwm scratchpad
+# Need to have xdotool installed
+
+
+winclass="$(xdotool search --class scpad)";
+if [ -z "$winclass" ]; then
+  kitty --class scpad
+else
+  if [ ! -f /tmp/scpad ]; then
+    touch /tmp/scpad && xdotool windowunmap "$winclass"
+  elif [ -f /tmp/scpad ]; then
+    rm /tmp//scpad && xdotool windowmap "$winclass"
+  fi
+fi

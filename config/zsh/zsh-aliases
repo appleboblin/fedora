@@ -3,10 +3,8 @@
 #alias nvimrc='nvim ~/.config/nvim/'
 
 # Exa 
-alias l='exa'
-alias la='exa -a'
 alias ll='exa -lah'
-alias ls='exa --color=auto'
+alias ls='exa -a --icons -s type'
 
 # Colorize grep output (good for log files)
 alias grep='grep --color=auto'
@@ -22,9 +20,12 @@ alias rm='rm -i'
 alias v='nvim'
 alias m='micro'
 alias wifi='nmtui'
-alias zotero='cd ~/application/zotero/ && devour bash zotero'
-alias wally='cd ~/application && ./wally'
-alias wake='cd ~/scripts && ./wake.sh'
+alias zotero='devour bash ~/application/zotero/zotero'
+alias wally='~/application/wally'
+alias wake='~/scripts/wake.sh'
+alias chat='cd /home/appleboblin/github/gpt4all/chat && ./gpt4all-lora-quantized-linux-x86 -m gpt4all-lora-unfiltered-quantized.bin'
 # open pdf
 alias fw='devour evince ~/Documents/school/university/osu/senior/fall/fw315/Gene\ Helfman,\ Bruce\ B.\ Collette,\ Douglas\ E.\ Facey,\ Brian\ W.\ Bowen\ -\ The\ Diversity\ of\ Fishes_\ Biology,\ Evolution,\ and\ Ecology\ \(2009,\ Wiley-Blackwell\)\ -\ libgen.lc.pdf'
-alias geog='devour evince ~/Documents/school/university/osu/senior/fall/geog360/Paul\ Bolstad\ -\ GIS\ Fundamentals_\ a\ First\ Text\ on\ Geographic\ Information\ Systems\ \(2019,\ Eider\ Press\)\ -\ libgen.li.pdf'
+alias mb='devour evince /home/appleboblin/Documents/school/university/osu/senior/winter/MB302/General-Microbiology-1636412688.pdf'
+alias geog='devour evince ~/Documents/school/university/osu/senior/fall/geog360/Paul\ Bolstad\ -\ GIS\ Fundamentals_\ a\ First\ Text\ on\ Geographic\ Information\ Systems\ \(2020,\ Eider\ Press\)\ -\ libgen.li.pdf'
+alias bb='devour evince /home/appleboblin/Documents/school/university/osu/senior/winter/BB451/BiochemistryFreeForAll1.3_compressed.pdf'

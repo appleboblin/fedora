@@ -9,7 +9,7 @@
 
 /*****----- Configuration -----*****/
 configuration {
-	modi:                       "drun,url:~/scripts/url2.sh";
+	modi:                       "drun,url:~/scripts/url.sh";
     show-icons:                 true;
     display-drun:               "";
     display-url:                "";
